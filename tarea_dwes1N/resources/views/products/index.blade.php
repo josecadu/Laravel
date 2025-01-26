@@ -61,7 +61,7 @@ LISTA DE PRODUCTOS
                     <form action="{{route('products.destroy',$item)}}" method="post">
                         @csrf
                         @method('DELETE')
-                        <a href="{{route('products.edit',$item)}}">
+                        <a href="{{route('products.update',$item)}}">
                             <i class="fas fa-edit text-blue-400"></i>
                         </a>
                         <button type="submit">
